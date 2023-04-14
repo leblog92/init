@@ -9,12 +9,17 @@ html,body{
 	margin:0;
 }
 body{	
-	font-family: 'Roboto', sans-serif;
+	font-family:"Roboto",sans-serif;
 	overflow:hidden;
 	user-select:none;
 }
 h1{
-text-align:center;
+	text-align:center;
+}
+header{
+width:100%;
+position:fixed;
+top:0;
 }
 footer{
 	position:fixed;
@@ -37,9 +42,11 @@ footer{
 	border-radius:10px;
 	background:rgba(0,0,0,0);
 }
-.bloc:hover{
-	background:rgba(0,0,0,0.25);
-}
+
+#bloc1{background:#F2AEC1;}
+#bloc2{background:#F2CED8;}
+#bloc3{background:#8FD9D9;}
+#bloc4{background:#E7F2D5;}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,8 +54,10 @@ footer{
 <link rel="icon" type="image/png" href="https://em-content.zobj.net/thumbs/120/twitter/322/laptop_1f4bb.png"/>
 </head>
 <body>
+<header>
 <h1>Inititation Informatique</h1>
-
+</header>
+<br><br><br><br><br><br><br><br><br><br>
 <div class="wrapper">
 	<div class="bloc" id="bloc1"><h2>1</h2><p>Apprendre les manipulations de base</p></div>
 	<div class="bloc" id="bloc2"><h2>2</h2><p>Apprendre les déplacements</p></div>
