@@ -4,70 +4,12 @@
 <meta charset="utf-8">
 <title>Initiation Informatique</title>
 <style>
-html,body{
-height:100%;
-margin:0;
-}
-body{	
-font-family:'Roboto',sans-serif;
-overflow:hidden;
-user-select:none;
-background-color:#f0f0f0;
-}
-h1{font-weight:300;text-align:center;}
-header{
-width:100%;
-height:10%;
-position:fixed;
-top:0;
-background-color:#fff;
-border-bottom:20px solid #0081b2;
-box-shadow:0px 1px 6px 0px rgba(0, 0, 0, 0.12), 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
-}
-footer{
-position:fixed;
-width:100%;
-left:0;
-bottom:0;
-color:#fff;
-background-color:#0081b2;
-padding:20px;
-}
-.container { 
-height:80%;
-position:relative;
-}
-.center {
-margin:0;
-position:absolute;
-top:50%;
-left:50%;
--ms-transform:translate(-50%, -50%);
-transform:translate(-50%, -50%);
-}
-.wrapper{
-display:grid;
-grid-template-columns:repeat(4, 1fr);
-grid-auto-rows:175px;
-}
-.wrapper-footer{
-display:grid;
-grid-template-columns:repeat(3, 1fr);
-grid-auto-rows:auto;
-padding-left:10%;
-padding-right:10%;
-}
-.bloc{
-transition:1s;
-text-align:center;
-margin:10px;
-padding:5px;
-border-radius:10px;
-background:rgba(0,0,0,0);
-box-shadow:0px 1px 6px 0px rgba(0, 0, 0, 0.12), 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
-}
-.bloc:hover{transform:scale(1.1) rotate(-2deg);}
 a{color:#000;text-decoration:none;}
+body{font-family:'Roboto',sans-serif;overflow:hidden;user-select:none;background-color:#f0f0f0;}
+footer{position:fixed;width:100%;left:0;bottom:0;color:#fff;background-color:#0081b2;padding:20px;}
+h1{padding-top:10px;font-weight:300;text-align:center;}
+header{width:100%;height:10%;position:fixed;top:0;background-color:#fff;border-bottom:20px solid #0081b2;box-shadow:0px 1px 6px 0px rgba(0, 0, 0, 0.12), 0px 1px 4px 0px rgba(0, 0, 0, 0.12);}
+html,body{height:100%;margin:0;}
 #bloc1{background:#F2AEC1;}
 #bloc2{background:#F2CED8;}
 #bloc3{background:#8FD9D9;}
@@ -76,6 +18,13 @@ a{color:#000;text-decoration:none;}
 #bloc6{background:#FFC088;}
 #bloc7{background:#E87D75;}
 #bloc8{background:#B2F8A7;}
+.bloc:hover{transform:scale(1.1) rotate(-2deg);}
+.bloc{transition:1s;text-align:center;margin:10px;padding:5px;border-radius:10px;background:rgba(0,0,0,0);box-shadow:0px 1px 6px 0px rgba(0, 0, 0, 0.12), 0px 1px 4px 0px rgba(0, 0, 0, 0.12);}
+.center{margin:0;position:absolute;top:50%;left:50%;-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
+.container{ height:80%;position:relative;}
+.num{  border-radius:50%;  padding: 15px;  background: #fff;  color: #000;  text-align: center;}
+.wrapper{display:grid;grid-template-columns:repeat(4, 1fr);grid-auto-rows:175px;}
+.wrapper-footer{display:grid;grid-template-columns:repeat(3, 1fr);grid-auto-rows:auto;padding-left:10%;padding-right:10%;}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,14 +37,14 @@ a{color:#000;text-decoration:none;}
 <div class="container">
 <div class="center">
 <div class="wrapper">
-<div class="bloc" id="bloc1"><a href="exercice1.html"><p>Cliquer sur</p><h2>1</h2><p>Apprendre les manipulations de base</p></div></a>
-<div class="bloc" id="bloc2"><a href="exercice2.html"><p>Cliquer sur</p><h2>2</h2><p>Apprendre les déplacements</p></a></div>
-<div class="bloc" id="bloc3"><a href="exercice3.html"><p>Cliquer sur</p><h2>3</h2><p>Apprendre le clavier</p></a></div>
-<div class="bloc" id="bloc4"><a href="exercice4.html"><p>Cliquer sur</p><h2>4</h2><p>Apprendre les formulaires</p></a></div>
-<div class="bloc" id="bloc5"><a href="exercice5.html"><p>Cliquer sur</p><h2>5</h2><p>Apprendre à sélectionner du texte</p></a></div>
-<div class="bloc" id="bloc6"><a href="exercice6.html"><p>Cliquer sur</p><h2>6</h2><p>Apprendre à copier/coller</p></a></div>
-<div class="bloc" id="bloc7"><a href="exercice7.html"><p>Cliquer sur</p><h2>7</h2><p>Apprendre à envoyer un message</p></a></div>
-<div class="bloc" id="bloc8"><a href="exercice8.html"><p>Cliquer sur</p><h2>8</h2><p>Apprendre à cliquer</p></a></div>
+<div class="bloc" id="bloc1"><a href="exercice1.html"><p>Cliquer sur</p><h2><span class="num">&nbsp;1&nbsp;</span></h2><p>Apprendre les manipulations de base</p></div></a>
+<div class="bloc" id="bloc2"><a href="exercice2.html"><p>Cliquer sur</p><h2><span class="num">&nbsp;2&nbsp;</span></h2><p>Apprendre les déplacements</p></a></div>
+<div class="bloc" id="bloc3"><a href="exercice3.html"><p>Cliquer sur</p><h2><span class="num">&nbsp;3&nbsp;</span></h2><p>Apprendre le clavier</p></a></div>
+<div class="bloc" id="bloc4"><a href="exercice4.html"><p>Cliquer sur</p><h2><span class="num">&nbsp;4&nbsp;</span></h2><p>Apprendre les formulaires</p></a></div>
+<div class="bloc" id="bloc5"><a href="exercice5.html"><p>Cliquer sur</p><h2><span class="num">&nbsp;5&nbsp;</span></h2><p>Apprendre à sélectionner du texte</p></a></div>
+<div class="bloc" id="bloc6"><a href="exercice6.html"><p>Cliquer sur</p><h2><span class="num">&nbsp;6&nbsp;</span></h2><p>Apprendre à copier/coller</p></a></div>
+<div class="bloc" id="bloc7"><a href="exercice7.html"><p>Cliquer sur</p><h2><span class="num">&nbsp;7&nbsp;</span></h2><p>Apprendre à envoyer un message</p></a></div>
+<div class="bloc" id="bloc8"><a href="exercice8.html"><p>Cliquer sur</p><h2><span class="num">&nbsp;8&nbsp;</span></h2><p>Apprendre à cliquer</p></a></div>
 </div>
 </div>
 </div>
@@ -106,7 +55,7 @@ a{color:#000;text-decoration:none;}
 15-21 Boulevard du Maréchal Foch<br>
 92500 Rueil-Malmaison<br>
 France<br>
-Tél. accueil : 01 47 14 54 54<br>
+Tél. accueil : 01 47 14 54 54<br><br>
 ©2023 Médiathèque Jacques-Baumel<br>
 Tous droits réservés<br>
 </div>
@@ -123,10 +72,10 @@ Fermé le dimanche matin et le lundi<br>
 </div>
 <div style="padding-left:50px;">
 <h3>À propos</h3>
-<a href="#" style="color:#fff;">Contacts</a><br>
-<a href="#" style="color:#fff;">Informations légales</a><br>
-<a href="#" style="color:#fff;">Accessibilité</a><br>
-<a href="#" style="color:#fff;">Plan du site</a><br>
+<a href="https://catalogue.mediatheque-rueilmalmaison.fr/contact" target="_blank" style="color:#fff;">Contacts</a><br>
+<a href="https://catalogue.mediatheque-rueilmalmaison.fr/mentions-legales" target="_blank" style="color:#fff;">Informations légales</a><br>
+<a href="https://catalogue.mediatheque-rueilmalmaison.fr/accessibilite" target="_blank" style="color:#fff;">Accessibilité</a><br>
+<a href="https://catalogue.mediatheque-rueilmalmaison.fr/plan-du-site" target="_blank" style="color:#fff;">Plan du site</a><br>
 </div>
 </div>
 </footer>
